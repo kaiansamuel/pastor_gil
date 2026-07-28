@@ -5,6 +5,13 @@ import Image from "next/image";
 import { ArrowRight, Check, ChevronDown, Menu } from "lucide-react";
 import { useAxisformMotion } from "@/components/use-axisform-motion";
 import pastorGil from "@/pastor_gil.jpeg";
+import pastorCulto from "@/pastor00.jpeg";
+import pastorCertificados from "@/pastor01.jpeg";
+import pastorKarate from "@/pastor02.jpeg";
+import pastorDistribuicaoNoite from "@/pastor03.jpeg";
+import pastorCantando from "@/pastor04.jpeg";
+import pastorComunidade from "@/pastor05.jpeg";
+import pastorFilaAlimentos from "@/pastor06.jpeg";
 
 export function LandingPage() {
   useAxisformMotion();
@@ -133,8 +140,8 @@ export function LandingPage() {
       
           
           <section className="services-section relative min-h-screen overflow-hidden px-5 py-24 md:px-8 lg:px-12">
-            <div className="absolute left-1/2 top-0 h-[360px] w-[78%] -translate-x-1/2 overflow-hidden rounded-b-[32px] border-x border-b border-[#f3f0e8]/10 md:h-[480px] lg:h-[620px]">
-              <Image src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/3b2725ca-5b05-49fe-b2ff-9de382bf26ef_1600w.webp" alt="Homens em atividade na comunidade terapêutica" className="strip-image h-full w-full object-cover object-center opacity-70" width={3840} height={2160} sizes="(max-width: 767px) 100vw, 50vw" />
+            <div className="absolute left-1/2 top-0 h-[360px] w-[78%] -translate-x-1/2 overflow-hidden rounded-b-[32px] border-x border-b border-[#f3f0e8]/10 md:h-auto md:aspect-[1.55]">
+              <Image src={pastorCertificados} alt="Homens da Lapidando Tesouros recebendo certificados de qualificação profissional" className="strip-image h-full w-full object-cover object-[center_80%] opacity-70" sizes="(max-width: 767px) 100vw, 50vw" />
             </div>
 
             <div className="grid min-h-screen items-center gap-14 md:grid-cols-12">
@@ -186,11 +193,11 @@ export function LandingPage() {
           
           <section className="numbers-intro relative min-h-screen overflow-hidden px-5 py-24 md:px-8 lg:px-12">
             <figure className="parallax-image parallax-slow pointer-events-none right-4 top-32 h-28 w-40 rotate-[7deg] md:right-8 md:top-28 md:h-48 md:w-72">
-              <Image src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/07705938-ccca-4133-9f21-1b3f01af3463_3840w.png" alt="Abstract architecture detail" width={3840} height={2160} sizes="(max-width: 767px) 100vw, 50vw" />
+              <Image src={pastorFilaAlimentos} alt="Fila de distribuição de alimentos na comunidade" sizes="(max-width: 767px) 100vw, 50vw" />
             </figure>
-      
+
             <figure className="parallax-image parallax-fast pointer-events-none bottom-24 left-4 h-24 w-36 rotate-[-9deg] md:bottom-20 md:left-10 md:h-40 md:w-60">
-              <Image src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/b07ad449-1292-4c6b-aff4-6ce345d9fa12_3840w.png" alt="Landscape color field" width={3840} height={2160} sizes="(max-width: 767px) 100vw, 50vw" />
+              <Image src={pastorDistribuicaoNoite} alt="Distribuição de alimentos à noite na comunidade" sizes="(max-width: 767px) 100vw, 50vw" />
             </figure>
       
             <div className="grid min-h-screen items-center gap-12 md:grid-cols-12">
@@ -236,23 +243,23 @@ export function LandingPage() {
 
             <div className="archive-gallery mt-20 flex gap-5 will-change-transform">
               <figure className="archive-card h-[420px] w-[320px] shrink-0 overflow-hidden rounded-[34px] border border-[#f3f0e8]/10 bg-[#101310] md:h-[560px] md:w-[420px]">
-                <Image src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/07705938-ccca-4133-9f21-1b3f01af3463_3840w.png" alt="Registro da comunidade Lapidando Tesouros" className="h-full w-full object-cover opacity-75" width={3840} height={2160} sizes="(max-width: 767px) 100vw, 50vw" />
+                <Image src={pastorCulto} alt="Culto da Lapidando Tesouros com multidão de braços erguidos" className="h-full w-full object-cover opacity-75" sizes="(max-width: 767px) 100vw, 50vw" />
               </figure>
 
               <figure className="archive-card mt-20 h-[360px] w-[300px] shrink-0 overflow-hidden rounded-[34px] border border-[#f3f0e8]/10 bg-[#101310] md:h-[460px] md:w-[360px]">
-                <Image src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/b07ad449-1292-4c6b-aff4-6ce345d9fa12_3840w.png" alt="Registro da comunidade Lapidando Tesouros" className="h-full w-full object-cover opacity-75" width={3840} height={2160} sizes="(max-width: 767px) 100vw, 50vw" />
+                <Image src={pastorCantando} alt="Pastor Gil cantando no palco da Lapidando Tesouros" className="h-full w-full object-cover opacity-75" sizes="(max-width: 767px) 100vw, 50vw" />
               </figure>
 
               <figure className="archive-card h-[420px] w-[320px] shrink-0 overflow-hidden rounded-[34px] border border-[#f3f0e8]/10 bg-[#101310] md:h-[560px] md:w-[420px]">
-                <Image src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/79e4228e-37c5-45bc-a352-ae8b41b6d71b_3840w.png" alt="Registro da comunidade Lapidando Tesouros" className="h-full w-full object-cover opacity-75" width={3840} height={2160} sizes="(max-width: 767px) 100vw, 50vw" />
+                <Image src={pastorComunidade} alt="Grupo reunido em estudo na comunidade" className="h-full w-full object-cover opacity-75" sizes="(max-width: 767px) 100vw, 50vw" />
               </figure>
 
               <figure className="archive-card mt-28 h-[360px] w-[300px] shrink-0 overflow-hidden rounded-[34px] border border-[#f3f0e8]/10 bg-[#101310] md:h-[460px] md:w-[360px]">
-                <Image src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/92ae1957-bb5d-4fef-b4fe-26a43ca6c254_3840w.png" alt="Registro da comunidade Lapidando Tesouros" className="h-full w-full object-cover opacity-75" width={3840} height={2160} sizes="(max-width: 767px) 100vw, 50vw" />
+                <Image src={pastorKarate} alt="Grupo de artes marciais na sede da Lapidando Tesouros" className="h-full w-full object-cover opacity-75" sizes="(max-width: 767px) 100vw, 50vw" />
               </figure>
 
               <figure className="archive-card h-[420px] w-[320px] shrink-0 overflow-hidden rounded-[34px] border border-[#f3f0e8]/10 bg-[#101310] md:h-[560px] md:w-[420px]">
-                <Image src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/e1f39209-cbcc-4857-bc13-744562e16d78_3840w.png" alt="Registro da comunidade Lapidando Tesouros" className="h-full w-full object-cover opacity-75" width={3840} height={2160} sizes="(max-width: 767px) 100vw, 50vw" />
+                <Image src={pastorFilaAlimentos} alt="Fila de distribuição de alimentos na comunidade" className="h-full w-full object-cover opacity-75" sizes="(max-width: 767px) 100vw, 50vw" />
               </figure>
             </div>
           </section>
@@ -272,8 +279,8 @@ export function LandingPage() {
               <div className="relative md:col-span-7 md:col-start-4">
                 <div className="relative flex min-h-[520px] items-center justify-center">
                   <span className="masked-number text-[13rem] font-black leading-none tracking-[-0.09em] md:text-[24rem] lg:text-[29rem]" style={{ "--number-image": "url('https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&amp;fit=crop&amp;w=1600&amp;q=90')" } as CSSProperties}>04</span>
-                  <Image src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/bf697fb6-c82a-4c34-95ec-cbfc47b8622f_3840w.png" alt="Registro da comunidade um" className="project-card absolute left-0 top-14 hidden h-44 w-72 rotate-[-14deg] rounded-[18px] border border-[#f3f0e8]/10 object-cover md:block" width={3840} height={2160} sizes="(max-width: 767px) 100vw, 50vw" />
-                  <Image src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/095918f0-0508-4c1f-867f-ec46e9f0720d_3840w.png" alt="Registro da comunidade dois" className="project-card absolute right-4 top-6 hidden h-44 w-72 rotate-[10deg] rounded-[18px] border border-[#f3f0e8]/10 object-cover md:block" width={3840} height={2160} sizes="(max-width: 767px) 100vw, 50vw" />
+                  <Image src={pastorCulto} alt="Culto da Lapidando Tesouros com multidão de braços erguidos" className="project-card absolute left-0 top-14 hidden h-44 w-72 rotate-[-14deg] rounded-[18px] border border-[#f3f0e8]/10 object-cover md:block" sizes="(max-width: 767px) 100vw, 50vw" />
+                  <Image src={pastorComunidade} alt="Grupo reunido em estudo na comunidade" className="project-card absolute right-4 top-6 hidden h-44 w-72 rotate-[10deg] rounded-[18px] border border-[#f3f0e8]/10 object-cover md:block" sizes="(max-width: 767px) 100vw, 50vw" />
                 </div>
               </div>
 
@@ -290,7 +297,7 @@ export function LandingPage() {
             </h2>
 
             <figure className="parallax-image parallax-slow pointer-events-none absolute right-5 top-28 hidden h-44 w-72 rotate-[5deg] overflow-hidden rounded-[28px] border border-[#f3f0e8]/10 md:block lg:right-14 lg:h-56 lg:w-96">
-              <Image src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/92ae1957-bb5d-4fef-b4fe-26a43ca6c254_3840w.png" alt="Registro da comunidade Lapidando Tesouros" className="h-full w-full object-cover" width={3840} height={2160} sizes="(max-width: 767px) 100vw, 50vw" />
+              <Image src={pastorCantando} alt="Pastor Gil cantando no palco da Lapidando Tesouros" className="h-full w-full object-cover" sizes="(max-width: 767px) 100vw, 50vw" />
             </figure>
 
             <div className="relative z-10 mx-auto flex min-h-screen w-full max-w-6xl flex-col justify-center">
@@ -319,7 +326,7 @@ export function LandingPage() {
                 </article>
 
                 <article className="note-card group relative min-h-[430px] overflow-hidden rounded-[38px] border border-[#f3f0e8]/10 bg-[#111612] md:col-span-4">
-                  <Image src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/79e4228e-37c5-45bc-a352-ae8b41b6d71b_3840w.png" alt="Registro da rotina da comunidade" className="h-full w-full object-cover opacity-70 transition duration-700 group-hover:scale-105 group-hover:opacity-90" width={3840} height={2160} sizes="(max-width: 767px) 100vw, 50vw" />
+                  <Image src={pastorKarate} alt="Grupo de artes marciais na sede da Lapidando Tesouros" className="h-full w-full object-cover opacity-70 transition duration-700 group-hover:scale-105 group-hover:opacity-90" sizes="(max-width: 767px) 100vw, 50vw" />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#060706] via-[#060706]/25 to-transparent"></div>
                   <div className="absolute bottom-7 left-7 right-7">
                     <p className="text-xs font-black uppercase tracking-[0.18em] text-[#f3f0e8]/50">02 / Disciplina</p>
@@ -366,7 +373,7 @@ export function LandingPage() {
           
           <section className="process-section relative min-h-screen overflow-hidden px-5 py-24 md:px-8 lg:px-12">
             <figure className="parallax-image parallax-slow pointer-events-none right-4 top-24 h-28 w-44 rotate-[4deg] md:right-8 md:top-20 md:h-56 md:w-80">
-              <Image src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/e1f39209-cbcc-4857-bc13-744562e16d78_3840w.png" alt="Registro de atividade em grupo na comunidade" width={3840} height={2160} sizes="(max-width: 767px) 100vw, 50vw" />
+              <Image src={pastorDistribuicaoNoite} alt="Distribuição de alimentos à noite na comunidade" sizes="(max-width: 767px) 100vw, 50vw" />
             </figure>
 
             <div data-reveal="" className="mb-16 max-w-2xl">
