@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 
 const inter = Inter({
@@ -10,9 +9,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Axisform® — Independent Design Studio",
+  title: "Lapidando Tesouros — Pastor Gil",
   description:
-    "Axisform builds launch operating systems for founders, product teams, and cultural projects.",
+    "Comunidade terapêutica gratuita liderada pelo Pastor Gil, dedicada à recuperação de dependentes químicos em Aparecida de Goiânia.",
 };
 
 export default function RootLayout({
@@ -21,9 +20,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={inter.variable}>
+    <html lang="pt-BR" className={inter.variable}>
       <body>{children}</body>
-      <GoogleAnalytics gaId="G-2M6V79H761" />
+      {/* Google Analytics removido: o gaId do template original apontava para a conta de outra pessoa. Adicionar de volta com o gaId real da Lapidando Tesouros. */}
     </html>
   );
 }
