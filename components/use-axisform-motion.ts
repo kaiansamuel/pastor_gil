@@ -6,10 +6,10 @@ import Lenis from "lenis";
 
 export function useAxisformMotion() {
   useEffect(() => {
-    let cleanup = () => {};
-
     const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    
+    let lenisCleanup = () => {};
+
+    const ctx = gsap.context(() => {
         if (!prefersReducedMotion) {
           gsap.registerPlugin(ScrollTrigger);
           gsap.defaults({ ease: "power3.out" });
@@ -321,29 +321,32 @@ export function useAxisformMotion() {
           const refreshScroll = () => ScrollTrigger.refresh();
           window.addEventListener("load", refreshScroll);
           window.addEventListener("resize", refreshScroll);
-    
-          cleanup = () => {
+
+          lenisCleanup = () => {
             window.removeEventListener("load", refreshScroll);
             window.removeEventListener("resize", refreshScroll);
             gsap.ticker.remove(updateLenis);
-            ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
             lenis.destroy();
           };
-    
+
         } else {
           const reducedLoader = document.getElementById("ax-loader");
           if (reducedLoader) reducedLoader.style.display = "none";
-    
+
           document.querySelectorAll<HTMLElement>(".reveal, [data-reveal]").forEach((item) => {
             item.style.opacity = "1";
             item.style.transform = "none";
           });
-    
+
           document.querySelectorAll<HTMLElement>(".timeline-bar").forEach((item) => {
             item.style.transform = "scaleX(1)";
           });
         }
+    });
 
-    return cleanup;
+    return () => {
+      lenisCleanup();
+      ctx.revert();
+    };
   }, []);
 }

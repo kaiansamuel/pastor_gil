@@ -4,14 +4,14 @@ import type { CSSProperties } from "react";
 import Image from "next/image";
 import { ArrowRight, Check, ChevronDown, Menu } from "lucide-react";
 import { useAxisformMotion } from "@/components/use-axisform-motion";
-import pastorGil from "@/pastor_gil.jpeg";
-import pastorCulto from "@/pastor00.jpeg";
-import pastorCertificados from "@/pastor01.jpeg";
-import pastorKarate from "@/pastor02.jpeg";
-import pastorDistribuicaoNoite from "@/pastor03.jpeg";
-import pastorCantando from "@/pastor04.jpeg";
-import pastorComunidade from "@/pastor05.jpeg";
-import pastorFilaAlimentos from "@/pastor06.jpeg";
+import pastorGil from "@/assets/images/pastor_gil.jpeg";
+import pastorCulto from "@/assets/images/pastor00.jpeg";
+import pastorCertificados from "@/assets/images/pastor01.jpeg";
+import pastorKarate from "@/assets/images/pastor02.jpeg";
+import pastorDistribuicaoNoite from "@/assets/images/pastor03.jpeg";
+import pastorCantando from "@/assets/images/pastor04.jpeg";
+import pastorComunidade from "@/assets/images/pastor05.jpeg";
+import pastorFilaAlimentos from "@/assets/images/pastor06.jpeg";
 
 export function LandingPage() {
   useAxisformMotion();
